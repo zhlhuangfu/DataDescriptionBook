@@ -1,5 +1,7 @@
 # Bag of Words Meets Bags of Popcorn
 
+## 各种各样的电影评论，有讽刺、有反语，你能识别出这些评论是在褒奖还是在批评吗？
+
 Link: [https://www.kaggle.com/c/word2vec-nlp-tutorial/](https://www.kaggle.com/c/word2vec-nlp-tutorial/)
 
 ### 题目描述
