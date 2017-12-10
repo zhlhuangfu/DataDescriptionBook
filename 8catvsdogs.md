@@ -1,5 +1,7 @@
 # Cats Vs Dogs
 
+## 给出一张猫或狗的图片，识别出这是猫还是狗？
+
 Link: [https://www.kaggle.com/c/dogs-vs-cats](https://www.kaggle.com/c/dogs-vs-cats) \(对原题数据改动较大\)
 
 ### 题目描述
