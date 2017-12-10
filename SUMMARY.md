@@ -5,4 +5,5 @@
 * [Kaggle Titanic Dataset](kaggle-titanic-dataset.md)
 * [Otto Group Dataset](otto-group-dataset.md)
 * [Car Risk Dataset](car-risk-dataset.md)
+* [8CatVSDogs](8catvsdogs.md)
 
