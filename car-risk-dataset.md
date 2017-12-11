@@ -37,13 +37,9 @@ etc.
 
 使用RMSE \(Root Mean Square Error\)作为评价指标，公式如下：
 
+<img src="http://www.forkosh.com/mathtex.cgi? RMSE=\sqrt{\frac{\sum_{i=1}^N(y_i-\hat{y_i})^2}{N}}">
 
-$$
-RMSE=\sqrt{\frac{\sum_{i=1}^N(y_i-\hat{y_i})^2}{N}}
-$$
-
-
-其中$$N$$代表测试数据集中汽车的数量，$$y_{i}$$代表其真实的风险值，$$\hat{y_i}$$代表你预测的风险值。
+其中<img src="http://www.forkosh.com/mathtex.cgi? N">代表测试数据集中汽车的数量，<img src="http://www.forkosh.com/mathtex.cgi? y_{i}">代表其真实的风险值，<img src="http://www.forkosh.com/mathtex.cgi? \hat{y_i}">代表你预测的风险值。
 
 ### 代码与数据
 
