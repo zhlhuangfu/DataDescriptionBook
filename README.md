@@ -2,7 +2,5 @@
 
 # Gitbook链接：
 
-https://www.gitbook.com/book/gilyexiao/datadescriptionbook/edit\#/edit/master/README.md?\_k=evw20a
-
-
+[https://www.gitbook.com/book/gilyexiao/datadescriptionbook](https://www.gitbook.com/book/gilyexiao/datadescriptionbook/edit#/edit/master/README.md?_k=evw20a)
 
