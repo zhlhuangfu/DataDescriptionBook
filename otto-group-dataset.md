@@ -1,5 +1,7 @@
 # Otto Group 数据集
 
+## 给定Otto Group一些商品的多项特征信息，需要学习一个模型来判断一个商品所属的类别
+
 Link: [https://www.kaggle.com/c/otto-group-product-classification-challenge](https://www.kaggle.com/c/otto-group-product-classification-challenge)
 
 ### 题目描述
