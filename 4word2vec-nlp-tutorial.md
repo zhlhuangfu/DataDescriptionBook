@@ -47,11 +47,11 @@ id,sentiment
 
 下面简单介绍AUC，介绍AUC之前先介绍ROC：
 
-![](/assets/p8947349.jpg)
+![](https://img1.doubanio.com/view/note/large/public/p8947349.jpg)
 
 正如我们在这个ROC曲线的示例图中看到的那样，ROC曲线的横坐标为false positive rate（FPR），纵坐标为true positive rate（TPR）。下图中详细说明了FPR和TPR是如何定义的。
 
-![](/assets/p8947350.jpg)
+![](https://img3.doubanio.com/view/note/large/public/p8947350.jpg)
 
 接下来我们考虑ROC曲线图中的四个点和一条线。第一个点，\(0,1\)，即FPR=0, TPR=1，这意味着FN（false negative）=0，并且FP（false positive）=0。这是一个完美的分类器，它将所有的样本都正确分类。第二个点，\(1,0\)，即FPR=1，TPR=0，类似地分析可以发现这是一个最糟糕的分类器，因为它成功避开了所有的正确答案。第三个点，\(0,0\)，即FPR=TPR=0，即FP（false positive）=TP（true positive）=0，可以发现该分类器预测所有的样本都为负样本（negative）。类似的，第四个点（1,1），分类器实际上预测所有的样本都为正样本。经过以上的分析，我们可以断言，ROC曲线越接近左上角，该分类器的性能越好。
 
