@@ -1,5 +1,7 @@
 # Kaggle Titanic 数据集
 
+## 给定Titanic上乘客的信息，学习一个模型来判断一名乘客在沉船灾难中能否最终存活下来
+
 Link: [https://www.kaggle.com/c/titanic](https://www.kaggle.com/c/titanic)
 
 ### 题目描述
