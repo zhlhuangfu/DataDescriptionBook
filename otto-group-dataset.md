@@ -40,13 +40,9 @@ etc.
 
 使用 multi-class logarithmic loss 作为最后评判标准，公式如下：
 
+<img src="http://www.forkosh.com/mathtex.cgi? logloss = -\frac{1}{N}\sum_{i=1}^N\sum_{j=1}^My_{ij}log(p_{ij})">
 
-$$
-logloss = -\frac{1}{N}\sum_{i=1}^N\sum_{j=1}^My_{ij}log(p_{ij})
-$$
-
-
-其中$$N$$代表测试数据集中的商品数量，$$log$$使用自然对数，$$y_{ij}$$表示商品$$i$$是否属于$$class_j$$，如果是则$$y_{ij}=1$$，否则为$$0$$。$$p_{ij}$$代表你预测商品$$i$$属于$$class_j$$的概率。
+其中<img src="http://www.forkosh.com/mathtex.cgi? N">代表测试数据集中的商品数量，<img src="http://www.forkosh.com/mathtex.cgi? log">使用自然对数，<img src="http://www.forkosh.com/mathtex.cgi? y_{ij}">表示商品<img src="http://www.forkosh.com/mathtex.cgi? i">是否属于<img src="http://www.forkosh.com/mathtex.cgi? j">，如果是则<img src="http://www.forkosh.com/mathtex.cgi? y_{ij}=1">，否则为<img src="http://www.forkosh.com/mathtex.cgi? 0">。<img src="http://www.forkosh.com/mathtex.cgi? p_{ij}">代表你预测商品<img src="http://www.forkosh.com/mathtex.cgi? i">属于<img src="http://www.forkosh.com/mathtex.cgi? class_j">的概率。
 
 ### 代码与数据
 
