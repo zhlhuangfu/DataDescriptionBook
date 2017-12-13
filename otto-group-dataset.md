@@ -6,7 +6,7 @@ Link: [https://www.kaggle.com/c/otto-group-product-classification-challenge](htt
 
 ### 题目描述
 
-Otto Group是世界上最大的电子商务公司之一，在全世界范围内，它每天会卖出数百万件商品。每件商品所属的类别（Class\_1～ Class\_9）对于这家公司的货物供给和需求分析是非常重要的信息。现给定一些商品的多项特征信息，你需要学习一个模型来判断一个商品所属的类别。
+Otto Group是世界上最大的电子商务公司之一，在全世界范围内，它每天会卖出数百万件商品。每件商品所属的类别分别是Class\_1～ Class\_9。对于这家公司的来说，货物供给和需求分析是非常重要的信息。现给定一些商品的多项特征信息，你需要学习一个模型来判断一个商品所属的类别。
 
 ### 先修技能
 
@@ -16,7 +16,7 @@ Otto Group是世界上最大的电子商务公司之一，在全世界范围内�
 
 ### 输入格式
 
-数据文件train.csv和test.csv包含多个商品的信息。每个商品有如下信息：
+数据文件```train.csv```和```test.csv```包含多个商品的信息。每个商品有如下信息：
 
 1. id: 每个商品的唯一id
 2. feat\_1 ~ feat\_93: 每个商品的93个特征
@@ -38,7 +38,7 @@ etc.
 
 ### 评价
 
-使用 multi-class logarithmic loss 作为最后评判标准，公式如下：
+对于提交的文件，使用 multi-class logarithmic loss 作为最后评判标准，公式如下：
 
 <img src="http://www.forkosh.com/mathtex.cgi? logloss = -\frac{1}{N}\sum_{i=1}^N\sum_{j=1}^My_{ij}log(p_{ij})">
 
