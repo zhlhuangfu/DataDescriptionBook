@@ -14,13 +14,15 @@ Link: [https://www.kaggle.com/c/facial-keypoints-detection](https://www.kaggle.c
 * CNN的相关知识。
 
 ### 输入格式
-训练集给了大约5000个人物头像的灰度图片，像素96x96，灰度0-255，图片数据的矩阵被整理成一维向量，并附有每个头像15个关键点（keypoints）的位置坐标（x轴y轴）。
-
+train.csv提供了大约5000个人物头像的灰度图片，像素96x96，灰度0-255，图片数据的矩阵被整理成一维向量，并附有每个头像15个关键点（keypoints）的位置坐标（x轴y轴）。数据格式如下：
+```
+left_eye_center_x,left_eye_center_y,right_eye_center_x,right_eye_center_y,left_eye_inner_corner_x,left_eye_inner_corner_y,left_eye_outer_corner_x,left_eye_outer_corner_y,right_eye_inner_corner_x,right_eye_inner_corner_y,right_eye_outer_corner_x,right_eye_outer_corner_y,left_eyebrow_inner_end_x,left_eyebrow_inner_end_y,left_eyebrow_outer_end_x,left_eyebrow_outer_end_y,right_eyebrow_inner_end_x,right_eyebrow_inner_end_y,right_eyebrow_outer_end_x,right_eyebrow_outer_end_y,nose_tip_x,nose_tip_y,mouth_left_corner_x,mouth_left_corner_y,mouth_right_corner_x,mouth_right_corner_y,mouth_center_top_lip_x,mouth_center_top_lip_y,mouth_center_bottom_lip_x,mouth_center_bottom_lip_y,Image
+66.0335639098,39.0022736842,30.2270075188,36.4216781955,59.582075188,39.6474225564,73.1303458647,39.9699969925,36.3565714286,37.3894015038,23.4528721805,37.3894015038,56.9532631579,29.0336481203,80.2271278195,32.2281383459,40.2276090226,29.0023218045,16.3563789474,29.6474706767,44.4205714286,57.0668030075,61.1953082707,79.9701654135,28.6144962406,77.3889924812,43.3126015038,72.9354586466,43.1307067669,84.4857744361, 96x96 more pixels
+etc...
+```
 ### 输出格式
 
-根据测试集给出的头像图片数据，预测出每个人物头像的关键点的位置坐标，输出格式如下所示：
-
-如下所示：
+根据测试集给出的头像图片数据，预测出每个人物头像的关键点的位置坐标，第一列为行号，第二列为图像Id，第三列为特征名称，第四列为坐标。输出格式如下所示：
 
 ```
 RowId,ImageId,FeatureName,Location
@@ -33,10 +35,9 @@ etc...
 
 ### 评价
 
-使用RMSE作为最后评判标准。
-RMSE是方均根偏移(**root-mean-square deviation**)或方均根差(**root-mean-square error**)是一种常用的测量数值之间差异的量度。具体公式如下：
-$$RMSE = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}$$
-
+使用RMSE (Root Mean Square Error)作为评价指标，公式如下：
+<img src="http://www.forkosh.com/mathtex.cgi? RMSE = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)
+其中代表测试数据集中汽车的数量，代表其真实的风险值，代表你预测的风险值。^2}">
 
 ### 代码与数据
 

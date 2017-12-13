@@ -5,17 +5,17 @@
 Link: [https://www.kaggle.com/uciml/sms-spam-collection-dataset](https://www.kaggle.com/uciml/sms-spam-collection-dataset)
 
 ### 题目描述
-SMS Spam Collection英文短信数据集，它包括了5574条英文短信，短信内容由长短不一的几句话组成。每条短信打上了是否为垃圾短信的标签，试通过该训练集训练出一个可根据短信内容预测该短信是否为垃圾短信的分类器。
+下面有一个数据集, 它包括了5574条英文短信，短信内容由长短不一的几句话组成。每条短信都标注好了是否为垃圾短信，通过该训练集训练处一个分类器，预测短信内容是否为垃圾短信。
 
 ### 先修技能
 
-* 会svm或者bayes等分类器的使用
+* 会使用svm或者bayes等分类器
 * 原始数据集可参见链接：http://www.dt.fee.unicamp.br/~tiago/smsspamcollection/
 
 
 ### 输入格式
 数据文件spam.csv包含5574英文短信。
-每条短信占一行，每行由两列构成。第一列为label，内容为ham表示非垃圾短信，内容为spam表示为垃圾短信。第二列为短信内容，由长短不一的几句话组成。
+每条短信占一行，每行由两列构成。第一列是短信相应的标签`label`，如果是`ham`表示为非垃圾短信，如果是`spam`表示为垃圾短信。
 
 
 ### 输出格式
@@ -30,7 +30,18 @@ etc...
 
 ### 评价
 
-使用 accuracy 最后评判标准
+使用[准确率(accuracy)](https://www.zhihu.com/question/19645541)作为最后评判标准。
+
+```
+TP，True Positive，将正类预测为正类的数目
+
+FP，False Positive，将负类预测为正类数
+
+TN，True Negative，将负类预测为负类数
+
+FN，False Negative，将正类预测为负类数
+```
+<img src="http://www.forkosh.com/mathtex.cgi? Accuracy=\frac{TP+TN}{TP+FN+FP+TN}">
 
 
 ### 代码与数据
