@@ -1,12 +1,11 @@
 # SMS Spam Collection Dataset描述
 
-## 是垃圾邮件，不是垃圾邮件，这是一个问题。
+## 是垃圾短信，不是垃圾短信，这是一个问题。
 
 Link: [https://www.kaggle.com/uciml/sms-spam-collection-dataset](https://www.kaggle.com/uciml/sms-spam-collection-dataset)
 
 ### 题目描述
-
-给一条英文短信，短信内容由长短不一的几句话组成，试判断该短信是否为垃圾短信。
+SMS Spam Collection英文短信数据集，它包括了5574条英文短信，短信内容由长短不一的几句话组成。每条短信打上了是否为垃圾短信的标签，试通过该训练集训练出一个可根据短信内容预测该短信是否为垃圾短信的分类器。
 
 ### 先修技能
 

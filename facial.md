@@ -1,12 +1,13 @@
 # Facial Keypoints Detection
 
-## 你能教会计算机识别五大洲人种的眼耳鼻喉吗？
+## 你能教会计算机识别人脸的关键部位吗？
 
 Link: [https://www.kaggle.com/c/facial-keypoints-detection](https://www.kaggle.com/c/facial-keypoints-detection)
 
 ### 题目描述
 
 从人物头像的96x96像素的灰度照片中找出代表面部器官位置的关键点（keypoints）的坐标，关键点包括左右眼中心等，共15个。
+人脸关键点检测是一个非常困难的问题，不同图片的灯光、角度、人脸尺寸都会导致脸部特征的巨大不同。计算机视觉的研究者花了很多年去克服这一领域内的各种困难，现在得到的结果非常令人惊喜，但仍然还有很多问题值得探索。
 
 ### 先修技能
 
@@ -14,12 +15,6 @@ Link: [https://www.kaggle.com/c/facial-keypoints-detection](https://www.kaggle.c
 
 ### 输入格式
 训练集给了大约5000个人物头像的灰度图片，像素96x96，灰度0-255，图片数据的矩阵被整理成一维向量，并附有每个头像15个关键点（keypoints）的位置坐标（x轴y轴）。
-
-
-* `labeledTrainData.csv`是有Label的训练集，包含20000行评论数据，包括评论id、评论文本、情感（0代表消极，1代表积极）。
-* `testData.csv`是一个无Label的测试集，包含5000行评论数据，包括评论id、评论文本，没有对应情感。
-* `unlabeledTrainData`是额外的50000行无Label数据，包括评论id和评论文本。**可用来进行文本特征提取或半监督学习。**
-* `sampleSubmission`是一个提交格式的样例。
 
 ### 输出格式
 
@@ -38,11 +33,10 @@ etc...
 
 ### 评价
 
-使用RMSE作为最后评判标准
-RMSE，方均根偏移(**root-mean-square deviation**)或方均根差(**root-mean-square error**)是一种常用的测量数值之间差异的量度。具体公式如下：
+使用RMSE作为最后评判标准。
+RMSE是方均根偏移(**root-mean-square deviation**)或方均根差(**root-mean-square error**)是一种常用的测量数值之间差异的量度。具体公式如下：
 
-
-![](http://www.statisticshowto.com/wp-content/uploads/2016/10/root-mean-square-error.png)
+\textrm{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}
 
 
 ### 代码与数据

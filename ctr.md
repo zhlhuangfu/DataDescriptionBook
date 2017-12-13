@@ -30,7 +30,7 @@ etc...
 
 使用Logarithmic Loss (https://www.kaggle.com/wiki/LogarithmicLoss)作为最后评判标准,公式如下：
 log P(yt|yp) = yt log(yp) + (1 - yt) log(1 - yp)
-可以用来表征预测值和标准值的相关性。
+Logarithmic Loss可以用来表征预测值和标准值的相关性。
 
 
 
