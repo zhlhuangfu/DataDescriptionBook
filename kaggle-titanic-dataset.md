@@ -1,12 +1,12 @@
 # Kaggle Titanic 数据集
 
-## 给定Titanic上乘客的信息，学习一个模型来判断一名乘客在沉船灾难中能否最终存活下来
+## 给定泰坦尼克号船上乘客的信息，学习一个模型来判断一名乘客在沉船灾难中能否最终存活下来
 
 Link: [https://www.kaggle.com/c/titanic](https://www.kaggle.com/c/titanic)
 
 ### 题目描述
 
-**泰坦尼克号**\(RMS Titanic\)是英国白星航运公司下辖的一艘奥林匹克邮轮，在其处女航行中，因与一座冰山相撞而至沉船。在这次事故中，有约2/3的人丧生。现在给定Titanic上的乘客信息，你需要学习一个模型来判断一名乘客在沉船灾难中能否最终存活下来。
+**泰坦尼克号**\(RMS Titanic\)是英国白星航运公司下辖的一艘奥林匹克邮轮，在其处女航行中，因与一座冰山相撞而至沉船。在这次事故中，有约2/3的人丧生。现在给定泰坦尼克号船上的乘客信息，你需要学习一个模型来判断一名乘客在沉船灾难中能否最终存活下来。
 
 ### 先修技能
 
@@ -46,7 +46,18 @@ PassengerId,Survived
 
 ### 评价
 
-使用 accuracy 作为最后评判标准。
+使用[准确率(accuracy)](https://www.zhihu.com/question/19645541)作为最后评判标准。
+
+```
+TP，True Positive，将正类预测为正类的数目
+
+FP，False Positive，将负类预测为正类数
+
+TN，True Negative，将负类预测为负类数
+
+FN，False Negative，将正类预测为负类数
+```
+<img src="http://www.forkosh.com/mathtex.cgi? Accuracy=\frac{TP+TN}{TP+FN+FP+TN}">
 
 ### 代码与数据
 
@@ -76,6 +87,3 @@ test = pd.read_csv(data_dir + "titanic_correct_submission.csv").sort_values('Pas
 pred = pd.read_csv(data_dir + "prediction_test.csv").sort_values('PassengerId')
 accuracy = accuracy_score(test['Survived'],pred['Survived'])
 ```
-
-
-
