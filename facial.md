@@ -35,8 +35,7 @@ etc...
 
 使用RMSE作为最后评判标准。
 RMSE是方均根偏移(**root-mean-square deviation**)或方均根差(**root-mean-square error**)是一种常用的测量数值之间差异的量度。具体公式如下：
-
-\textrm{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}
+$$RMSE = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}$$
 
 
 ### 代码与数据

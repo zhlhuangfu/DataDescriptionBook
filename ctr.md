@@ -28,8 +28,8 @@ etc...
 
 ### 评价
 
-使用Logarithmic Loss (https://www.kaggle.com/wiki/LogarithmicLoss)作为最后评判标准,公式如下：
-log loss = -\frac{1}{N}\sum_{i=1}^N\sum_{j=1}^My_{i,j}\log(p_{i,j})
+使用Logarithmic Loss (https://www.kaggle.com/wiki/LogarithmicLoss) 作为最后评判标准,公式如下：
+$$logloss=-\frac{1}{n}\sum_{i=1}^N\sum_{j=1}^My_{i,j}\log(p_{i,j})$$
 Logarithmic Loss可以用来表征预测值和标准值的相关性。
 
 
