@@ -30,7 +30,7 @@ Link: [https://www.kaggle.com/c/word2vec-nlp-tutorial/](https://www.kaggle.com/c
 
 ### 输出格式
 
-您的提交csv文件应包含行名，并采用以下格式：对于测试集中的每条评论，输出一行，其中包含评论id和对应预测的结果（**注意，可以提交\[0, 1\]以内的任意数值，表示预测为正例的score，最终会采用AUC进行评价，**[**AUC的科普链接**](https://baike.baidu.com/item/AUC/19282953?fr=aladdin)）。如下所示：
+您提交的csv文件应包含行名，并采用以下格式：对于测试集中的每条评论，输出一行，其中包含评论id和对应预测的结果（**注意，可以提交\[0, 1\]以内的任意数值，表示预测为正例的score，最终会采用AUC进行评价，**[**AUC的科普链接**](https://baike.baidu.com/item/AUC/19282953?fr=aladdin)）。如下所示：
 
 ```
 id,sentiment
